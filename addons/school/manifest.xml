@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.nyabc.net" versionCode="0.8,1.0">
+	<application setting="false">
+		<name><![CDATA[学校]]></name>
+		<identifie><![CDATA[school]]></identifie>
+		<version><![CDATA[1.0.19]]></version>
+		<type><![CDATA[biz]]></type>
+		<ability><![CDATA[本插件需要配合微教育主程序使用，插件内容涵盖了培训课程推广员系统，其中包括课程团购系统，助力系统，分销系统以手机端课程销售管理系统]]></ability>
+		<description><![CDATA[本插件需要配合微教育主程序使用，插件内容涵盖了培训课程推广员系统，其中包括课程团购系统，助力系统，分销系统以手机端课程销售管理系统]]></description>
+		<author><![CDATA[营销插件包]]></author>
+		<url><![CDATA[http://www.nyabc.net/]]></url>
+	</application>
+
+	<platform>
+		<subscribes>
+		</subscribes>
+
+		<handles>
+			<message type="text" />
+		</handles>
+
+		<rule embed="false" />
+		<card embed="false" />
+		
+		<supports>
+		</supports>
+        <plugins></plugins> 
+        <plugin-main name="fm_jiaoyu" />
+
+	</platform>
+
+	<bindings>
+
+	</bindings>
+
+	<permissions>
+	</permissions>
+
+	<install><![CDATA[
+CREATE TABLE IF NOT EXISTS `ims_wx_school_sale_team` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `weid` int(10) unsigned NOT NULL COMMENT '公众号ID',
+  `schoolid` int(10) unsigned NOT NULL COMMENT '学校ID',
+  `kcid` int(10) unsigned NOT NULL COMMENT '归属课程ID',
+  `userid` int(10) unsigned NOT NULL COMMENT '参团的学生归属用户ID',
+  `openid` varchar(500) DEFAULT NULL COMMENT '此粉丝openid',
+  `ismaster` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '队长团长',
+  `masterid` int(10) unsigned NOT NULL COMMENT '归属团或组',
+  `is_sale` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '是否消费',
+  `is_success` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '是否成功',
+  `is_really` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '0真实1虚拟',
+  `pkuser` varchar(500) DEFAULT NULL COMMENT '虚拟团组添加人',
+  `orderid` int(10) unsigned NOT NULL COMMENT '订单ID',
+  `tuifei` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '退费申请',
+  `tfuser` varchar(500) DEFAULT NULL COMMENT '推翻操作人',
+  `type` tinyint(1) unsigned NOT NULL COMMENT '1团购2助力',
+  `endtime` int(10) unsigned NOT NULL COMMENT '创建时间',
+  `createtime` int(10) unsigned NOT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+
+]]></install>
+	<uninstall><![CDATA[DROP TABLE IF EXISTS `ims_wx_school_sale_team`;
+]]></uninstall>
+	<upgrade><![CDATA[upgrade.php]]></upgrade>
+
+</manifest>

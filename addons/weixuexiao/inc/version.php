@@ -1,0 +1,1 @@
+<?php if(!defined('IN_IA')) {exit('Access Denied');}if(!defined('weixuexiao_VERSION')) {define('weixuexiao_VERSION', '3.14');}if(!defined('weixuexiao_TIME')) {define('weixuexiao_TIME', '2018-04-03 13:10');}

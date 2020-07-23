@@ -1,0 +1,229 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: dell
+ * Date: 2020/5/19
+ * Time: 14:31
+ */
+/**
+ * 消息通知配置
+ */
+return array(
+    //提醒评价课程
+    'course_remind_evaluate'=>array(
+        'title'=>'课程评价',
+        'url'=>'course',//链接
+        'message'=>'【student】relation，您收到一条来自【school】的teacher老师的【course】课程评价通知time',//消息模板
+        'data'=>array('school','teacher','relation','student','course','time'),
+        'type'=>1,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //老师课程签到提醒审核
+    'remind_course'=>array(
+        'title'=>'课程签到',
+        'url'=>'course',//链接
+        'message'=>'time，teacher老师在【course】type课程上进行签到，请您及时处理',//消息模板
+        'data'=>array('teacher','course','time','type'),
+        'type'=>2,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //老师课程签到被确认通知
+    'confirm_teacher_course_sign'=>array(
+        'title'=>'课程签到',
+        'url'=>'course',//链接
+        'message'=>'teacher老师,您在type【course】课程上签到已经被确认，time，',//消息模板
+        'data'=>array('teacher','course','time','type'),
+        'type'=>3,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //自由课程学生请假成功通知
+    'notice_student_leave_success_1'=>array(
+        'title'=>'请假通知',
+        'url'=>'course',//链接
+        'message'=>'student relation您好,student在type【course】，time成功请假，目前已上课程done节，剩余rest节。',//消息模板
+        'data'=>array('student','relation','course','done','rest','time','type'),
+        'type'=>4,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //固定课程学生请假成功通知
+    'notice_student_leave_success_0'=>array(
+        'title'=>'请假通知',
+        'url'=>'course',//链接
+        'message'=>'student relation您好,student在time成功签到type【course】的nub，目前已上课程done节，剩余rest节。',//消息模板
+        'data'=>array('student','relation','course','done','rest','nub','time','type'),
+        'type'=>5,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //留言消息通知
+    'message_notification'=>array(
+        'title'=>'消息通知',
+        'url'=>'course',//链接
+        'message'=>'accept您好,您在time收到一条来自user给你发送的content留言，请您及时处理。',//消息模板
+        'data'=>array('user','accept','content','time'),
+        'type'=>6,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //学生签到需要确认 通知老师确认
+    'student_sign_need_confirm'=>array(
+        'title'=>'签到通知',
+        'url'=>'course',//链接
+        'message'=>'time，teacher老师您好,您的class同学student type签到status，请您及时处理',//消息模板
+        'data'=>array('teacher','student','class','status','time','type'),
+        'type'=>7,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //学生请假 通知老师确认
+    'student_leave_need_confirm'=>array(
+        'title'=>'请假通知',
+        'url'=>'course',//链接
+        'message'=>'time，teacher老师您好,您的class student同学type申请,时间:time_str，请您及时处理',//消息模板
+        'data'=>array('teacher','student','class','time_str','time','type'),
+        'type'=>8,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //学生课程签到通知老师确认
+    'student_sign_course_need_confirm'=>array(
+        'title'=>'课程签到',
+        'url'=>'course',//链接
+        'message'=>'time, teacher老师您好,【course】课程有新的签到信息需要您确认',//消息模板
+        'data'=>array('course','teacher','time'),
+        'type'=>9,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //客户留言 通知老师查看
+    'send_mail_notice_teacher'=>array(
+        'title'=>'校长信箱',
+        'url'=>'course',//链接
+        'message'=>'您好，teacher老师,student relation给您发了一条新的留言,请您及时处理,时间:time。',//消息模板
+        'data'=>array('teacher','student','relation','time'),
+        'type'=>10,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //学生发布班级圈通知老师审核
+    'noticeTeacherReviewClassCircle'=>array(
+        'title'=>'班级圈通知',
+        'url'=>'course',//链接
+        'message'=>'您好，teacher老师,name发布了一条新的班级圈,请您及时处理,时间:time。',//消息模板
+        'data'=>array('teacher','name','time'),
+        'type'=>11,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //学生发布班级圈通知老师审核
+    'noticePublisherExamineSuccess'=>array(
+        'title'=>'班级圈通知',
+        'url'=>'course',//链接
+        'message'=>'您好，namerelation您发布的班级圈审核通过了,时间:time。',//消息模板
+        'data'=>array('relation','name','time'),
+        'type'=>12,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //通知阅读任务
+    'noticeReadTask'=>array(
+        'title'=>'阅读任务通知',
+        'url'=>'course',//链接
+        'message'=>'您好，publisher发布了一条type【title】,时间:time，请注意查看',//消息模板
+        'data'=>array('name','title','type','publisher','time'),
+        'type'=>13,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //老师处理学生的请假请求，通知学生结果
+    'teacherExamineStudentLeaveNoticeStudent'=>array(
+        'title'=>'请假通知',
+        'url'=>'course',//链接
+        'message'=>'您好，teacher在time status student的在start-end请假请求',//消息模板
+        'data'=>array('teacher','time','status','start','end','student'),
+        'type'=>14,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //老师处理教员的请假请求，通知教员结果
+    'teacherExamineTeacherLeaveNoticeTeacher'=>array(
+        'title'=>'请假通知',
+        'url'=>'course',//链接
+        'message'=>'您好，teacher在time status applicant的在start-end请假请求',//消息模板
+        'data'=>array('teacher','time','status','start','end','applicant'),
+        'type'=>15,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //教师任务操作通知
+    'editStatusNoticeTeacher'=>array(
+        'title'=>'任务通知',
+        'url'=>'course',//链接
+        'message'=>'您好，editer在time status 【title】',//消息模板
+        'data'=>array('editer','time','status','title'),
+        'type'=>16,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //老师发布一条任务给接收者通知
+    'createTaskNoticeTeacher'=>array(
+        'title'=>'任务通知',
+        'url'=>'course',//链接
+        'message'=>'您好，publisher在time发布了新的任务【title】',//消息模板
+        'data'=>array('publisher','time','recipient','title'),
+        'type'=>17,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //老师回复校长信箱给学生发送通知
+    'teacherReplyMailNoticeStudent'=>array(
+        'title'=>'校长信箱',
+        'url'=>'course',//链接
+        'message'=>'studentrelation您好，您在校长信箱的留言有最新的回复了,请注意查收',//消息模板
+        'data'=>array('student','relation','reply','time'),
+        'type'=>18,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //班主任一键放学,通知学生家长
+    'leaveSchoolNoticeStudent'=>array(
+        'title'=>'一键放学',
+        'url'=>'course',//链接
+        'message'=>'班主任teacher:class在time放学,请各位家长注意接送学生',//消息模板
+        'data'=>array('teacher','class','time'),
+        'type'=>19,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //预约信箱通知负责预约老师
+    'appointmentNoticeTeacher'=>array(
+        'title'=>'预约通知',
+        'url'=>'course',//链接
+        'message'=>'time,name提交了预约信息,联系电话:phone,内容:content:',//消息模板
+        'data'=>array('name','phone','content','time'),
+        'type'=>20,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //老师修改报名信息通知客户（学生）
+    'editSignUpInfoNoticeStudent'=>array(
+        'title'=>'报名通知',
+        'url'=>'course',//链接
+        'message'=>"您好，name的报名资料已经开始审核，目前的状态：status。time",//消息模板
+        'data'=>array('name','status','time'),
+        'type'=>21,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //报名审核结果通知
+    'SignUpResultNoticeStudent'=>array(
+        'title'=>'报名通知',
+        'url'=>'course',//链接
+        'message'=>"您好，name的报名审核结果，目前的状态：status。time,content",//消息模板
+        'data'=>array('name','status','time','content'),
+        'type'=>22,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //老师确认学生签到(进校,离校)
+    'confirmStudentSignNoticeStudent'=>array(
+        'title'=>'确认通知',
+        'url'=>'course',//链接
+        'message'=>"您好，student的type签到status,time",//消息模板
+        'data'=>array('student','status','time','type'),
+        'type'=>23,
+        'on'=>1,//1：开启，其他关闭
+    ),
+    //老师替学生签到,通知学生(进校,离校)
+    'replaceStudentSignNoticeStudent'=>array(
+        'title'=>'确认通知',
+        'url'=>'course',//链接
+        'message'=>"您好，student的type签到status,time",//消息模板
+        'data'=>array('student','status','time','type'),
+        'type'=>23,
+        'on'=>1,//1：开启，其他关闭
+    ),
+
+);

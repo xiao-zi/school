@@ -1,0 +1,1 @@
+<?php if(!defined('IN_IA')) {exit('Access Denied');}if(!defined('weixuexiao_HOST')) {define('weixuexiao_HOST', 'wq.0953.cc');}
