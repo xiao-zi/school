@@ -12,8 +12,51 @@
  */
 include_once 'Basic.php';
 class common extends Basic {
-
-
+    public function getSchoolFood($school_id,$time){
+        $date = explode ('-', $time);
+        $start = mktime(0,0,0,$date[1],$date[2],$date[0]);
+        $end = $start + 86399;
+        $condition = " AND begintime <= '{$start}' AND endtime >= '{$end}'";
+        //根据时间和排序查找到一条食谱信息
+        $cookbook = pdo_fetch("SELECT * FROM " . tablename('wx_school_cookbook') . " WHERE schoolid = '{$school_id}' AND ishow = 1 $condition Order BY id,sort asc");
+        if($cookbook){
+            $week = date("w",$start);
+            $key = $str = '';
+            switch ($week){
+                case 1:$key = 'monday';$str = 'mon_'; break;
+                case 2:$key = 'tuesday';$str = 'tue_'; break;
+                case 3:$key = 'wednesday';$str = 'wed_'; break;
+                case 4:$key = 'thursday';$str = 'thu_'; break;
+                case 5:$key = 'friday';$str = 'fri_'; break;
+                case 6:$key = 'saturday';$str = 'sat_'; break;
+                case 0:$key = 'sunday';$str = 'sun_'; break;
+            }
+            $cook = iunserializer($cookbook[$key]);
+            $result = array(
+                'status'=>10001,
+                'msg'=>'SUCCESS',
+                'data'=>array(
+                    'zc'=>$cook[$str.'zc'],
+                    'zcpid'=>tomedia($cook[$str.'zc_pic']),
+                    'zjc'=>$cook[$str.'zjc'],
+                    'zjcpic'=>tomedia($cook[$str.'zjc_pic']),
+                    'wc'=>$cook[$str.'wc'],
+                    'wcpic'=>tomedia($cook[$str.'wc_pic']),
+                    'wjc'=>$cook[$str.'wjc'],
+                    'wjcpic'=>tomedia($cook[$str.'wjc_pic']),
+                    'wwc'=>$cook[$str.'wwc'],
+                    'wwcpic'=>tomedia($cook[$str.'wwc_pic']),
+                )
+            );
+        }else{
+            $result = array(
+                'status'=>10003,
+                'msg'=>'没有找到该时间的菜单',
+                'data'=>array()
+            );
+        }
+        return $result;
+    }
     /**
      * 获取班级信息，
      * @param $school_id 学校的id
@@ -342,6 +385,29 @@ class common extends Basic {
             $msg = false;
         }
         return array('status'=>10001,'msg'=>$msg,'data'=>$result);
+    }
+
+    /**
+     * 文章的点赞,目前没有记录用户点赞,只是增加点赞量
+     * @param $id 文章的id
+     * @return array
+     */
+    public function articleLike($id){
+        $item = pdo_fetch("SELECT id,schoolid,title,content,description,thumb,picarr,createtime,click,dianzan FROM " . tablename('wx_school_news') . " where id = '{$id}'");
+        if(empty($item)){
+            return array('status'=>10002,'msg'=>'该文章已被删除，请联系管理员了解详情！');
+        }
+        $click =$item['dianzan'] + 1;
+        $temp = array(
+            'dianzan' => $click
+        );
+        //更新点赞量
+        $result = pdo_update('wx_school_news', $temp, array('id' => $item['id']));
+        if($result){
+            return array('status'=>10001,'msg'=>'SUCCESS');
+        }else{
+            return array('status'=>10004,'msg'=>'点赞失败');
+        }
     }
     /**
      * 视频流播放视频

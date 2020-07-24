@@ -141,10 +141,6 @@ class WeEngine {
 		if(empty($this->account)) {
 			exit('Miss Account.');
 		}
-        echo '<pre>';
-        print_r($this->account);
-        echo '</pre>';
-        die();
 		if(!$this->account->checkSign()) {
 			exit('Check Sign Fail.');
 		}

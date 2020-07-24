@@ -43,7 +43,7 @@
                 $restlist[$key]['city'] = $city['name'];
                 $restlist[$key]['quyu'] = $quyu['name'];
             }
-            include $this->template('wapindexajax');
+            include $this->template('wapindex');
             die();
         }elseif($opration == 'ajaxdata'){
 		    $limit = $_GPC['limit'];
@@ -60,7 +60,7 @@
             include $this->template('wapindexajax');
             die();
         }
-/*
+
 		if ($sortid == 1) {
 			$restlist = pdo_fetchall("SELECT * FROM " . tablename($this->table_index) . " where weid = '{$weid}' and is_show=1 $strwhere ORDER BY is_show DESC,ssort DESC, id DESC");
 		} else if ($sortid == 2) {
@@ -75,7 +75,6 @@
 				$restlist[$key]['leixing'] = $shoptype['name'];
 				$restlist[$key]['city'] = $city['name'];
 				$restlist[$key]['quyu'] = $quyu['name'];
-			}*/
-
-//        include $this->template('wapindex');
+			}
+      include $this->template('wapindex');
 ?>

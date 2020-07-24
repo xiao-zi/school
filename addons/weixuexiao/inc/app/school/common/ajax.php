@@ -10,6 +10,7 @@
  */
 $op = $_GET['op'];
 $array = array (
+    'articleLike',//文章点赞
     'play_video',//视频播放
     'switch_users',//切换绑定的用户
     'gradeClassLinkage',//年级和班级的联动
@@ -26,6 +27,12 @@ if ($operation == 'default') {
 
 appLoad()->model('common');
 $model = new common();
+//文章的点赞
+if($operation == 'articleLike'){
+    $id = $_GET['id'];
+    $result = $model->articleLike($id);
+    json_encodeBack($result);
+}
 //视频播放
 if($operation == 'play_video'){
     $file = $_GET['url'];
