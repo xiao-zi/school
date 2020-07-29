@@ -179,7 +179,7 @@ function decryptToken($Token){
     if($over){
         $over_time = $data['user']['time']+$day*60*60*20;
         if(time() <= $over_time){
-            return array('status'=>'10103','msg'=>getAppConfig('status',10103));
+            return array('status'=>10003,'msg'=>'TOKEN已过期');
         }else{
             return check_user_info($data);
         }
@@ -195,10 +195,9 @@ function decryptToken($Token){
  */
 function check_user_info($data){
     //验证Token的用户信息是否正确
-    $user = pdo_fetch("SELECT * FROM " . tablename('app_school_user') . " where mobile = :mobile And id=:id ", array(':mobile' => $data['user']['phone'],':id' => $data['user']['id']));
-
+    $user = pdo_fetch("SELECT * FROM " . tablename('app_school_user') . " where mobile = '{$data['user']['phone']}' And id = '{$data['user']['id']}'");
     if(empty($user)){
-        return array('status'=>10002,'msg'=>'非法请求！');
+        return array('status'=>10004,'msg'=>'非法Token');
     }else{
         return array('status'=>10001,'msg'=>'SUCCESS','data'=>$data);
     }

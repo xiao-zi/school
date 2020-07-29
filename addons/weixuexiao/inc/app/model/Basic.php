@@ -158,14 +158,17 @@ class Basic{
      */
     public function get_app_info(){
         $token = $_POST['token'];//验证用户身份
-        $user = decryptToken($token)['data'];//解密
-        if(empty($user)){
+        $user = decryptToken($token);//解密
+        if($user['status'] != 10001){
+            json_encodeBack($user);
+        }
+        if(empty($user['data'])){
             json_encodeBack(array('status'=>10002,'msg'=>'解密失败！'));
         }
-        if(empty($user['user'])){//查看app的信息是否存在
+        if(empty($user['data']['user'])){//查看app的信息是否存在
             json_encodeBack(array('status'=>10003,'msg'=>'非法请求！'));
         }
-        return $user['user'];
+        return $user['data']['user'];
     }
 
     /**
@@ -174,12 +177,12 @@ class Basic{
     public function get_all_user_info(){
         //包含绑定信息的token
         $token = $_POST['token'];//验证用户身份
-        $user = decryptToken($token)['data'];//解密
-        if(empty($user)){
-            json_encodeBack(array('status'=>10002,'msg'=>'解密失败！'));
+        $user = decryptToken($token);//解密
+        if($user['status'] != 10001){
+            json_encodeBack($user);
         }
-        if(empty($user['school'])){//查看绑定的信息是否存在
-            json_encodeBack(array('status'=>10003,'msg'=>'非法请求！'));
+        if(empty($user['data'])){
+            json_encodeBack(array('status'=>10002,'msg'=>'解密失败！'));
         }
         return $user;
     }

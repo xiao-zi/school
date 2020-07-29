@@ -42,6 +42,17 @@ pdo_query("CREATE TABLE IF NOT EXISTS `ims_wx_school_message` (
   index `user_id`(`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;");
 /**
+ * 补充文章点赞记录
+ */
+pdo_query("CREATE TABLE IF NOT EXISTS `ims_wx_school_news_like` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `new_id` int(11) not  null comment '文章的id',
+  `user_id` INT(11) unsigned NOT NULL DEFAULT 0 COMMENT 'app用户id',
+  `create_at` INT(10) unsigned NOT NULL DEFAULT 0 COMMENT '创建时间',
+  PRIMARY KEY (`id`),
+  key `user_id`(`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;");
+/**
  * 绑定表
  */
 if(!pdo_fieldexists('wx_school_user','userid')) {
@@ -117,4 +128,7 @@ if(!pdo_fieldexists('wx_school_order','user_id')) {
 /**
  * 收货人表 添加user_id 用来代替openid的作用
  */
-pdo_query("ALTER TABLE ims_wx_school_address ADD COLUMN `user_id` INT(11) DEFAULT 0 COMMENT 'app用户id'");
+if(!pdo_fieldexists('wx_school_address','user_id')) {
+    pdo_query("ALTER TABLE ims_wx_school_address ADD COLUMN `user_id` INT(11) DEFAULT 0 COMMENT 'app用户id'");
+}
+

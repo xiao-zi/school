@@ -12,6 +12,12 @@
  */
 include_once 'Basic.php';
 class common extends Basic {
+    /**
+     * 根据时间获取学生的食谱
+     * @param $school_id
+     * @param $time
+     * @return array
+     */
     public function getSchoolFood($school_id,$time){
         $date = explode ('-', $time);
         $start = mktime(0,0,0,$date[1],$date[2],$date[0]);
@@ -388,25 +394,51 @@ class common extends Basic {
     }
 
     /**
-     * 文章的点赞,目前没有记录用户点赞,只是增加点赞量
-     * @param $id 文章的id
+     * 文章的点赞
+     * @param $id
      * @return array
+     * @throws ReflectionException
      */
     public function articleLike($id){
+        $user = $this->get_app_info();
+        $user_id = $user['id'];
         $item = pdo_fetch("SELECT id,schoolid,title,content,description,thumb,picarr,createtime,click,dianzan FROM " . tablename('wx_school_news') . " where id = '{$id}'");
         if(empty($item)){
             return array('status'=>10002,'msg'=>'该文章已被删除，请联系管理员了解详情！');
         }
-        $click =$item['dianzan'] + 1;
-        $temp = array(
-            'dianzan' => $click
-        );
-        //更新点赞量
-        $result = pdo_update('wx_school_news', $temp, array('id' => $item['id']));
-        if($result){
+        $like = pdo_fetch("SELECT id FROM " . tablename('wx_school_news_like') . " where new_id = '{$id}' and user_id ='{$user_id}'");
+        pdo_fetchall('set AUTOCOMMIT=0');//关闭自动提交，自此句执行以后，每个SQL语句或者语句块所在的事务都需要显示"commit"才能提交事务
+        pdo_fetchall('START TRANSACTION');//启动一个新事务
+        if(empty($like)){
+            $click =$item['dianzan'] + 1;
+            $temp = array(
+                'dianzan' => $click
+            );
+            //更新点赞量
+            $result1 = pdo_update('wx_school_news', $temp, array('id' => $item['id']));
+            $newLike = array(
+                'new_id'=>$id,
+                'user_id'=>$user_id,
+                'create_at'=>time()
+            );
+            //添加点赞记录
+            $result = pdo_insert('wx_school_news_like',$newLike);
+        }else{
+            $click =$item['dianzan'] - 1;
+            $temp = array(
+                'dianzan' => $click
+            );
+            //更新点赞量
+            $result1 = pdo_update('wx_school_news', $temp, array('id' => $item['id']));
+            //删除点赞记录
+            $result = pdo_delete('wx_school_news_like',array('id'=>$like['id']));
+        }
+        if($result && $result1){
+            pdo_fetchall('COMMIT');
             return array('status'=>10001,'msg'=>'SUCCESS');
         }else{
-            return array('status'=>10004,'msg'=>'点赞失败');
+            pdo_fetchall('ROLLBACK');
+            return array('status'=>10006,'msg'=>'点赞失败!!!');
         }
     }
     /**

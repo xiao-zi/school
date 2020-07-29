@@ -27,7 +27,7 @@ class api extends Core{
     }
     /******************APP接口连接 start********************/
     /** 学校 start */
-    /**学校搜索处理**/
+    /**学校搜索处理1**/
     public function AppSchoolSearch(){
         include_once 'inc/app/school/schoolSearch.php';
     }
@@ -35,23 +35,23 @@ class api extends Core{
     public function AppSchoolList(){
         include_once 'inc/app/school/schoolList.php';
     }
-    /**学校首页**/
+    /**学校首页1**/
     public function AppSchoolDetail(){
         include_once 'inc/app/school/detail.php';
     }
-    /**学校文章**/
+    /**学校文章1**/
     public function AppSchoolArticle(){
         include_once 'inc/app/school/schoolArticle.php';
     }
-    /**学校简介**/
+    /**学校简介1**/
     public function AppSchooljianjie(){
         include_once 'inc/app/school/jianjie.php';
     }
-    /**招生简介**/
+    /**招生简介1**/
     public function AppSchoolRecruit(){
         include_once 'inc/app/school/recruit.php';
     }
-    /**学校食谱**/
+    /**学校食谱1**/
     public function AppSchoolCookbook(){
         include_once 'inc/app/school/cookbook.php';
     }
