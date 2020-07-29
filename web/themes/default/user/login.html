@@ -91,6 +91,8 @@
 	document.getElementById('password').onkeypress = detectCapsLock;
 
 	function formcheck() {
+        alert(1111);return;
+
 		if($('#remember:checked').length == 1) {
 			cookie.set('remember-username', $(':text[name="username"]').val());
 		} else {
