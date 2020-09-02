@@ -43,7 +43,6 @@ class System extends OAuth2Client {
 		if (empty($member['password'])) {
 			return error('-1', '请输入密码');
 		}
-
 		return $member;
 	}
 

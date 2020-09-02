@@ -129,6 +129,7 @@ if ('post' == $do) {
 }
 
 if ('save' == $do) {
+
 	$user = $_GPC['user'];
 	$user_info = array(
 		'username' => safe_gpc_string($user['username']),
@@ -141,7 +142,7 @@ if ('save' == $do) {
 	if (user_is_vice_founder()) {
 		$user_info['owner_uid'] = $_W['uid'];
 	}
-
+	print_r($_W['uid']);exit;
 	$user_add = user_info_save($user_info);
 	if (is_error($user_add)) {
 		iajax(-1, $user_add['message'], url('user/display'));

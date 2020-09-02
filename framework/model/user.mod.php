@@ -42,7 +42,6 @@ function user_register($user, $source) {
 	if (empty($user['type'])) {
 		$user['type'] = USER_TYPE_COMMON;
 	}
-
 	$result = pdo_insert('users', $user);
 	if (!empty($result)) {
 		$user['uid'] = pdo_insertid();
@@ -61,6 +60,7 @@ function user_register($user, $source) {
 	));
 	return intval($user['uid']);
 }
+
 
 
 function user_check($user) {
@@ -225,6 +225,7 @@ function user_single($user_or_uid) {
 	$record['hash'] = md5($record['password'] . $record['salt']);
 		unset($record['password'], $record['salt']);
 	$founder_own_user_info = table('users_founder_own_users')->getFounderByUid($user['uid']);
+
 	if (!empty($founder_own_user_info) && !empty($founder_own_user_info['founder_uid'])) {
 		$vice_founder_info = pdo_getcolumn('users', array('uid' => $founder_own_user_info['founder_uid']), 'username');
 		if (!empty($vice_founder_info)) {

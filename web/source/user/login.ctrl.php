@@ -44,7 +44,6 @@ function _login($forward = '') {
 	} else {
 		$member = OAuth2Client::create($_GPC['login_type'], $_W['setting']['thirdlogin'][$_GPC['login_type']]['appid'], $_W['setting']['thirdlogin'][$_GPC['login_type']]['appsecret'])->bind();
 	}
-
 	if (!empty($_W['user']) && '' != $_GPC['handle_type'] && 'bind' == $_GPC['handle_type']) {
 		if (is_error($member)) {
 			itoast($member['message'], url('user/profile/bind'), '');
@@ -131,6 +130,7 @@ function _login($forward = '') {
 			message($notice, $redirect, 'expired', '', $extend_buttons);
 		}
 		cache_build_frame_menu();
+		print_r($record);exit;
 		itoast("欢迎回来，{$record['username']}", $forward, 'success');
 	} else {
 		if (empty($failed)) {

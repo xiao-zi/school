@@ -13,7 +13,11 @@ if(empty($model)){
 //自动加载类
 spl_autoload_register(function ($classname) {
     $namespace = explode('\\',$classname);
-    $class_path =  IA_ROOT . '/addons/weixuexiao/inc/admin/controller/'.end($namespace).'.php';
+    if($namespace[1] == 'controller'){
+        $class_path =  IA_ROOT . '/addons/weixuexiao/inc/admin/controller/'.end($namespace).'.php';
+    }elseif ($namespace[1] == 'model'){
+        $class_path =  IA_ROOT . '/addons/weixuexiao/inc/admin/model/'.end($namespace).'.model.php';
+    }
     if(file_exists($class_path)){
         include_once $class_path;
     }else{
@@ -27,7 +31,7 @@ if(file_exists(IA_ROOT . '/addons/weixuexiao/inc/admin/function.php')){
     echo json_encode(array('status'=>404, 'msg'=>'公共函数找不到了'));die();
 }
 if(!empty($model)){
-    $name = "\\admin\\".$model;
+    $name = "\\admin\\controller\\".$model;
     $controller = new $name();
 }
 //设置默认加载的方法
@@ -37,4 +41,4 @@ if(empty($function)){
 if(!method_exists($controller,$function)){
     echo json_encode(array('status'=>404, 'msg'=>'未找到访问地址'));die();
 }
-EXIT($controller->$model());
+EXIT($controller->$function());

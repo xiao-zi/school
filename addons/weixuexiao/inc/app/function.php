@@ -99,7 +99,7 @@ function getSchoolFood($schoolid,$time){
  * @param $data
  */
 function json_encodeBack($data){
-    echo json_encode($data);die();
+    echo json_encode($data,JSON_FORCE_OBJECT);die();
 }
 
 /**
@@ -109,7 +109,7 @@ function json_encodeBack($data){
  * @throws ReflectionException
  */
 function returnJsonBack($status,$data= array()){
-    echo json_encode(array('status'=>$status,'msg'=>getAppConfig('status',$status),'data'=>$data));die();
+    echo json_encode(array('status'=>$status,'msg'=>getAppConfig('status',$status),'data'=>$data),JSON_FORCE_OBJECT);die();
 }
 
 /**

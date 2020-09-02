@@ -4,6 +4,465 @@
     <list default="true" id="6ad79484-b4b2-468a-99c7-7a7a1e6dbcba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/weixuexiao/inc/admin/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/weixuexiao/inc/admin/function.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/weixuexiao/inc/app/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/weixuexiao/inc/app/function.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/common/1_0_footer.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/common/1_0_header.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/common/1_0_message.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/common/2_0_footer.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/common/2_0_header.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/common/2_0_message.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/home/1_0_home.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/mc/1_0_iswxapp.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_bangding.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_binding.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_bjqcss.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_comad.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_face.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_facenew.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_footer.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_hide_url.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_hook.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_loading.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_newfooter.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_newpay.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_port.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_shoucecss.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_wapindex.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/1_wapindexajax.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_bjqlist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_courselist_new.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_cyylist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_gkklist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_hidenwxshare.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_mnoticelist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_msgcss.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_newstulist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_notelist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_notice_bjtz.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_notice_commont.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_notice_user.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_pointdetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_smychecklog.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_snotelist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_stulist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_syzxx.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_szuoyelist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_tallstuchecklog.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_tkcsignall.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_tkcsigndetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_todolist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_tyzxx.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_xgtemple.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_yuecostlog.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/comtool/1_zuoyelist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_cooklist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_coursedetail_new.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_courselist_new.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_detail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_guid.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_jianjie.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_kcdg.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_new.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_newslist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_showhomework.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_signup.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_signupjc.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_signuplist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_tcinfo.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_teachers.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_yystcom.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_yzxx.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/greencom/1_zhaosheng.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_allcamera.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_calendar.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_callbook.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_candercss.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_chaxun.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_checkcard.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_checklog.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_chengji.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_chongzhi.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_gadetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_galist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_gopay.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_kcpingjia.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_leavelist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_myclass.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_myfamily.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_myinfo.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_mykcdetial.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_mykcinfo.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_mykconline.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_mysaleinfo.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_mytecher.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_newkcpingjia.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_newuser.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_newuser_new.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_order.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_sbjqfbnew.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_sbjqnew.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_scforxs.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_schoolbus.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_sclistforxs.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_scplforxs.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_sduihua.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_seditorder.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_sgetorder.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_sgoodsdetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_sgoodslist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_signrecord.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_slylist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_smychecklog.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_snotice.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_snoticelist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_stuinfocard.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_sxc.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_sxcfb.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_sxclist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_syzxx.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_szjh.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_szjhlist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_szuoye.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_szuoyelist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_timetable.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_user.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_useredit.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_wxsign.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_xsqj.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/students/1_yuecostlog.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_bjqfabunew.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_bjqnew.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_bm.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_bmlist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_checkcardforteacher.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_createtodo.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_cyydetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_cyylist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_editorder.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_fabunew.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_getorder.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_gkkadd.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_gkkdetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_gkklist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_gkkpingjia.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_gkkpjjl.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_gkkpjshare.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_goodsdetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_goodslist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_jschecklog.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_leavelistforteacher.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_mallpay.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_mfabu.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_mfabunew.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_mnotice.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_mnoticelist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_myinfodetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_myschool.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_myschool_new.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_nopoint.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_notice.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_noticelist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_pointdetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_pointrule.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_qingjia.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_questatistics.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_questionnaire.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_recod.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_rehomework.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_setaddress.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_shouce.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_shouceadd.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_shoucelist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_shoucepl.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_shoucepy.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_shoucepygl.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_shoucepyglad.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_sign.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_signlist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_smssage.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_stulist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tallcamera.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tallstuchecklog.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tcalendar.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tduihua.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tkcsignall.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tkcsigndetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tkcstu.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tlylist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tmcomet.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tmssage.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tmycourse.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tmykcinfo.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_todolist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tongxunlu.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tqingjiaall.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tqrjsqd.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tstuscore.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_txsbqkc.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tyzxx.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tzjhadd.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tzjhadd_tea.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_tzjhlist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_wxsignforteacher.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_xc.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_xcfb.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_xclist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_zuoye.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_zuoyelist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/default/weixuexiao/teacher/1_zyfbnew.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/common/header-site.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/core/1_display.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/store/1_goodspayments.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/store/1_header.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/store/1_orders.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/store/1_paysetting.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/store/common/1_footer-base.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/store/common/1_footer.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/store/common/1_header-base.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/store/common/1_header-notice.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/common/1_footer-base.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/common/1_footer.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/common/1_header-base.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/common/1_header-module.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/common/1_header-notice.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/common/1_header.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/mobile/1_face.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_add_kc.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_bannerlist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_comhead.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_ctrl_nave.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_dblist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_diychoose_new.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_diychoose_t.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_diychoose_t_new.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_diychose.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_excel_input.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_footer-base.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_footer.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_header-base.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_header.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_imgeschoses.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_jpkc.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_kc_bm_list.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_kcchose.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_kccommend.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_kcpage.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_kctable_bot.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_kcteam.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_kctitle.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_ks_cont.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_link.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_linkchose.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_message.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_mflist_new.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_new_ctrl_nave.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_newpage.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_newpage_new.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_newpage_t.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_newpage_t_new.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_newpage_t_new_master.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_one_kc.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_paike.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_teacher.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_timeModal.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_toplist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/public/1_typelist_t.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_apps.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_area.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_article.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_assess.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_banner.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_banners.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_basic.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_binding.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_bjquan.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_bjscore.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_cardlist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_check.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_checkdatedetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_checkdateset.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_checklog.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_checksend_add.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_checktimeset.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_chengji.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_chongzhi.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_city.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_comad.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_comload.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_common.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_cook.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_cost.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_coursetype.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_creates.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_editaddr.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_fenzu.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_fzqx.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_fzqx_houtai.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_fztidarr.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_gasignup.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_gkkpjtj.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_gkkpjxt.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_gongkaike.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_groupactivity.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_guid.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_help.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_houseorder.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_jsfz.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_kcallstusign.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_kcbiao.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_kcset.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_kcsign.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_kecheng.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_loginctrl.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_malladd.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_mallorder.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_manager.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_manger_apps.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_newarea.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_newcomload.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_newmanager.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_news.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_newschool.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_newtype.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_notice.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_payall.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_permiss.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_pfxm.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_photos.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_points.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_printer.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_printlog.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_qrlist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_refund.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_remind.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_review.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_school.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_schoolset.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_score.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_semester.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_sendmsg_muti.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_sensitive.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_shoucelist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_shouceset.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_showgkkpj.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_showpjdetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_signup.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_sms.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_start.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_stu_infocard.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_students.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_studentscore.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_subject.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_teascore.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_template.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_theclass.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_timeframe.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_timetable.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_tscoreobject.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_type.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_upgrade.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_uploadsence.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_upsencerecord.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_week.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_wenzhang.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_yuerefound.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/2.0/weixuexiao/web/1_yzxx.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/account/account-header.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/account/create.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/account/manage-base.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/account/manage-modules-tpl.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/account/manage-operatoers.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/account/manage-sms.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/account/manage-users.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/account/recycle.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/article/common.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/article/news-show.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/article/news.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/article/notice-post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/article/notice-show.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/article/notice.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/cloud/frame.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/common/message.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/founder/display.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/founder/group.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/help/display.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/home/welcome-ext.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/mc/common.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/mc/fields.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/mc/group.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/mc/member.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/message/notice.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/module/expire.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/module/expire_add.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/module/link-list.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/module/manage-account.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/module/permission.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/module/plugin.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/module/shortcut.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/platform/cover.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/platform/mass-post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/platform/material.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/platform/menu.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/platform/qr-list.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/platform/reply.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/profile/common.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/profile/module-link-uniacid.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/profile/payment.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/profile/remote.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/site/display.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/statistics/account.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/statistics/app-account.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/statistics/app-display.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/statistics/setting.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/statistics/site-current-account.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/attachment.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/bom.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/check.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/database.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/job.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/menu.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/module-group.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/optimize.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/platform.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/scan.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/sensitive-word.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/site.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/template.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/user-setting-header.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/create-group-display.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/edit-account-dateline.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/edit-account.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/edit-base.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/edit-create-account-list.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/edit-header.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/edit-modules-tpl.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/expire.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/fields-display.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/group-display.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/group-post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/login.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/web/default/user/login.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/register.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/registerset.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/utility/emulator.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/utility/user-browser.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/webapp/bind-domain.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/webapp/home.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/webapp/rewrite.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/weixuexiao/default/common/footer-base.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/weixuexiao/default/common/footer.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/weixuexiao/default/common/header-base.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/weixuexiao/default/common/header.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/weixuexiao/default/common/message.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/weixuexiao/default/user/login.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/class/oauth2/system.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/class/oauth2/system.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/function/global.func.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/function/global.func.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/model/user.mod.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/model/user.mod.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/source/user/create.ctrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/source/user/create.ctrl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/source/user/login.ctrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/source/user/login.ctrl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/default/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/default/user/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +475,9 @@
     <session id="-1574744449">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="5" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="3" />
@@ -25,13 +485,13 @@
           <entry key="project.open.time.24" value="6" />
           <entry key="project.open.time.25" value="5" />
           <entry key="project.open.time.26" value="2" />
-          <entry key="project.open.time.27" value="6" />
+          <entry key="project.open.time.27" value="7" />
           <entry key="project.open.time.28" value="3" />
           <entry key="project.open.time.29" value="6" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="6" />
           <entry key="project.open.time.32" value="2" />
-          <entry key="project.open.time.33" value="6" />
+          <entry key="project.open.time.33" value="7" />
           <entry key="project.open.time.34" value="2" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="1" />
@@ -40,33 +500,35 @@
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.67" value="2" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.70" value="1" />
-          <entry key="project.opened" value="69" />
+          <entry key="project.opened" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="23" />
-          <entry key="gitignore" value="5" />
+          <entry key="gitignore" value="20" />
           <entry key="hosts" value="16" />
-          <entry key="html" value="623" />
+          <entry key="html" value="625" />
           <entry key="js" value="1" />
           <entry key="md" value="120" />
-          <entry key="php" value="175113" />
+          <entry key="php" value="178535" />
           <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="623" />
+          <entry key="HTML" value="625" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="120" />
-          <entry key="PHP" value="175104" />
-          <entry key="PLAIN_TEXT" value="44" />
+          <entry key="PHP" value="178526" />
+          <entry key="PLAIN_TEXT" value="59" />
           <entry key="SQL" value="9" />
           <entry key="XML" value="17" />
         </counts>
@@ -78,7 +540,7 @@
           <entry key="gif" value="2" />
           <entry key="gitignore" value="2" />
           <entry key="hosts" value="2" />
-          <entry key="html" value="241" />
+          <entry key="html" value="244" />
           <entry key="ico" value="1" />
           <entry key="id_rsa" value="1" />
           <entry key="inc" value="1" />
@@ -87,11 +549,12 @@
           <entry key="json" value="6" />
           <entry key="log" value="1" />
           <entry key="md" value="1" />
-          <entry key="php" value="2795" />
+          <entry key="php" value="2860" />
           <entry key="phtml" value="2" />
           <entry key="png" value="16" />
           <entry key="pub" value="1" />
           <entry key="sql" value="2" />
+          <entry key="stackdump" value="1" />
           <entry key="ts" value="1" />
           <entry key="txt" value="2" />
           <entry key="xml" value="3" />
@@ -99,13 +562,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="241" />
+          <entry key="HTML" value="244" />
           <entry key="Image" value="82" />
           <entry key="JSON" value="6" />
           <entry key="JavaScript" value="12" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="2798" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="PHP" value="2863" />
+          <entry key="PLAIN_TEXT" value="11" />
           <entry key="SQL" value="2" />
           <entry key="SmartyConfig" value="6" />
           <entry key="TypeScript" value="1" />
@@ -122,19 +585,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/index.php">
+        <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/model/user.model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/function.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            <state relative-caret-position="946">
+              <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -142,53 +596,80 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="775">
+              <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/OAuth2/Autoloader.php">
+        <entry file="file://$PROJECT_DIR$/framework/const.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
-              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="5350">
+              <caret line="214" column="33" selection-start-line="214" selection-start-column="8" selection-end-line="214" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.php">
+        <entry file="file://$PROJECT_DIR$/web/source/user/login.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="151" column="41" lean-forward="true" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
+            <state relative-caret-position="3225">
+              <caret line="129" column="72" selection-start-line="129" selection-start-column="72" selection-end-line="129" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/common/template.func.php">
+        <entry file="file://$PROJECT_DIR$/framework/class/oauth2/oauth2client.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            <state relative-caret-position="250">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework/class/oauth2/system.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1450">
+              <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework/model/user.mod.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9000">
+              <caret line="360" column="9" selection-start-line="360" selection-start-column="9" selection-end-line="360" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/themes/default/user/login.html">
+        <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="50">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -197,36 +678,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>reciveConfirm</find>
-      <find>createMobileUrl</find>
-      <find>deleteclass</find>
-      <find>OrderList</find>
-      <find>mallorder</find>
-      <find>teacher</find>
-      <find>is_on</find>
-      <find>checkobjiect</find>
-      <find>doMobile</find>
-      <find>Check Sign Fail</find>
-      <find>start(</find>
-      <find>domain</find>
-      <find>wapindex</find>
-      <find>bind_domain</find>
-      <find>$strwhere</find>
-      <find>dianzan</find>
-      <find>$_GPC</find>
-      <find>事务</find>
-      <find>ims_wx_school_address</find>
-      <find>距离</find>
-      <find>年级管理</find>
-      <find>$_W</find>
-      <find>uniarr</find>
-      <find>$schoolid</find>
-      <find>do</find>
-      <find>request</find>
       <find>__autoload</find>
       <find>$class</find>
       <find>jwt</find>
       <find>submit</find>
+      <find>$user_info</find>
+      <find>load</find>
+      <find>$is_founder_group</find>
+      <find>getIp</find>
+      <find>COMMENT</find>
+      <find>经纬度</find>
+      <find>checkUserInfo</find>
+      <find>REGULAR_USERNAME</find>
+      <find>passwordVerification</find>
+      <find>PASSWORD_VERIFICATION</find>
+      <find>replacePasswordBadStr</find>
+      <find>PASSWORD_REPLACE</find>
+      <find>StrDeal</find>
+      <find>authkey</find>
+      <find>$salt</find>
+      <find>$_W</find>
+      <find>checkUsername</find>
+      <find>$PASSWORD_STR</find>
+      <find>user_register</find>
+      <find>create</find>
+      <find>addPermission</find>
+      <find>login()</find>
+      <find>user_single</find>
+      <find>dump</find>
+      <find>user_is_vice_founder</find>
+      <find>login(</find>
     </findStrings>
     <replaceStrings>
       <replace>$file</replace>
@@ -271,16 +752,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/school/teacher/more/good/orderDetail.php" />
-        <option value="$PROJECT_DIR$/framework/library/pdo/PDO.class.php" />
-        <option value="$PROJECT_DIR$/framework/class/db.class.php" />
-        <option value="$PROJECT_DIR$/framework/function/pdo.func.php" />
-        <option value="C:/Windows/System32/drivers/etc/hosts" />
-        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/mobile/teacher/getorder.php" />
-        <option value="$PROJECT_DIR$/framework/model/mc.mod.php" />
-        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/school/teacher/more/good/list.php" />
-        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/school/teacher/more/good/detail.php" />
-        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/school/teacher/more/good/placeOrder.php" />
         <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/model/good.php" />
         <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/school/common/GoodAjax.php" />
         <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/school/student/more/good/detail.php" />
@@ -307,7 +778,6 @@
         <option value="$PROJECT_DIR$/app/school.php" />
         <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/model/common.php" />
         <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/mysql.php" />
-        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/function.php" />
         <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/model/Basic.php" />
         <option value="$PROJECT_DIR$/addons/weixuexiao/api.php" />
         <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/school/teacher/teachers.php" />
@@ -315,13 +785,24 @@
         <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/school/course/grade.php" />
         <option value="$PROJECT_DIR$/addons/weixuexiao/admin.php" />
         <option value="$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/aaa.php" />
-        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/controller.php" />
-        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/admin/function.php" />
-        <option value="$PROJECT_DIR$/app/admin.php" />
         <option value="$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/index.php" />
-        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/user.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/web/themes/default/user/login.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/web/source/user/display.ctrl.php" />
+        <option value="$PROJECT_DIR$/framework/function/global.func.php" />
+        <option value="$PROJECT_DIR$/app/admin.php" />
+        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/controller.php" />
+        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/admin/model/model.model.php" />
+        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/app/function.php" />
+        <option value="$PROJECT_DIR$/web/source/user/create.ctrl.php" />
+        <option value="$PROJECT_DIR$/framework/class/oauth2/oauth2client.class.php" />
+        <option value="$PROJECT_DIR$/framework/class/oauth2/system.class.php" />
+        <option value="$PROJECT_DIR$/web/source/user/login.ctrl.php" />
+        <option value="$PROJECT_DIR$/framework/model/user.mod.php" />
+        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/admin/function.php" />
+        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/admin/model/user.model.php" />
+        <option value="$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/user.php" />
+        <option value="$USER_HOME$/Desktop/index.html" />
       </list>
     </option>
   </component>
@@ -331,7 +812,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1040" />
@@ -405,30 +886,35 @@
               <item name="addons" type="462c0819:PsiDirectoryNode" />
               <item name="weixuexiao" type="462c0819:PsiDirectoryNode" />
               <item name="inc" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="OAuth2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="school" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="weixuexiao" type="462c0819:PsiDirectoryNode" />
-              <item name="inc" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="school" type="b2602c69:ProjectViewProjectNode" />
               <item name="school" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="weixuexiao" type="462c0819:PsiDirectoryNode" />
-              <item name="inc" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="school" type="b2602c69:ProjectViewProjectNode" />
+              <item name="school" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="school" type="b2602c69:ProjectViewProjectNode" />
               <item name="school" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="school" type="b2602c69:ProjectViewProjectNode" />
+              <item name="school" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="school" type="b2602c69:ProjectViewProjectNode" />
+              <item name="school" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="school" type="b2602c69:ProjectViewProjectNode" />
@@ -442,6 +928,14 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="default" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="school" type="b2602c69:ProjectViewProjectNode" />
+              <item name="school" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -562,18 +1056,26 @@
       <workItem from="1595550192014" duration="19571000" />
       <workItem from="1595810658544" duration="10849000" />
       <workItem from="1595895975861" duration="11907000" />
-      <workItem from="1595982621790" duration="7164000" />
+      <workItem from="1595982621790" duration="23960000" />
+      <workItem from="1596155551018" duration="12346000" />
+      <workItem from="1596242621039" duration="536000" />
+      <workItem from="1596423356986" duration="3137000" />
+      <workItem from="1596679121115" duration="17654000" />
+      <workItem from="1596759972946" duration="1080000" />
+      <workItem from="1597019414652" duration="3460000" />
+      <workItem from="1597105606204" duration="1809000" />
+      <workItem from="1597211736185" duration="1253000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1627611000" />
+    <option name="totallyTimeSpent" value="1685682000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19829424" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33528784" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -595,7 +1097,7 @@
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16471216" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20682302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -700,229 +1202,11 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/school/cookbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/mysql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="47" column="61" lean-forward="true" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/model/Basic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1600">
-          <caret line="183" column="30" selection-start-line="183" selection-start-column="30" selection-end-line="183" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/model/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="402" column="29" selection-start-line="402" selection-start-column="29" selection-end-line="402" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="1357" column="30" selection-start-line="1357" selection-start-column="26" selection-end-line="1357" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/school/teacher/detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/school/teacher/teachers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75850">
-          <caret line="3034" column="11" selection-start-line="3034" selection-start-column="11" selection-end-line="3041" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/template/mobile/students/sclistforxs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/admin.phtml" />
-    <entry file="file://$PROJECT_DIR$/app/school.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin.php" />
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/model/weekly.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="66" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/school/jianjie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/model.phtml" />
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/jwt/BeforeValidException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/SPL/SPL.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/jwt/SignatureInvalidException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/jwt/JWT.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/jwt/ExpiredException.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/aaa.php" />
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/jwt/JWK.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/admin.php" />
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" selection-start-line="13" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/model/teacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2075">
-          <caret line="83" column="28" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/school/course/grade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/school/detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/oauth2-server-php-master/src/OAuth2/Server.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/oauth2-server-php-master/test/lib/OAuth2/Request/TestRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-904" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/oauth2-server-php-master/test/config/keys/id_rsa.pub">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/oauth2-server-php-master/test/config/keys/id_rsa">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/oauth2-server-php-master/test/config/storage.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!block;n#authorization_codes#0;n#!!top" />
-            <element signature="n#!!block;n#client_credentials#0;n#!!top" />
-            <element signature="n#!!block;n#user_credentials#0;n#!!top" />
-            <element signature="n#!!block;n#refresh_tokens#0;n#!!top" />
-            <element signature="n#!!block;n#accesstoken-expired#0;n#!!block;n#access_tokens#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/oauth2-server-php-master/src/OAuth2/OpenID/Storage/UserClaimsInterface.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -945,9 +1229,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#37#65#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -957,19 +1238,15 @@
     <entry file="file://$PROJECT_DIR$/addons/weixuexiao/map.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/weixuexiao/public/web/js/amazeui.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="2764" selection-start-line="7" selection-start-column="2764" selection-end-line="7" selection-end-column="2764" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/merchant.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/common/template.func.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -978,31 +1255,253 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/OAuth2/Autoloader.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        <state relative-caret-position="175">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sh.exe.stackdump">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="151" column="41" lean-forward="true" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
+        <state relative-caret-position="1024">
+          <caret line="141" column="1" lean-forward="true" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/OAuth2/Autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="700">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/themes/default/user/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+        <state relative-caret-position="950">
+          <caret line="38" column="88" selection-start-line="38" selection-start-column="88" selection-end-line="38" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/source/user/display.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/default/user/display.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/model/setting.mod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/source/user/__init.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/load.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/class/oauth2/mobile.class.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/model/model.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="747" column="9" selection-start-line="747" selection-start-column="9" selection-end-line="747" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/unsubscribe.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/upgrade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="217" column="17" selection-start-line="217" selection-start-column="17" selection-end-line="217" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/app/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="111" column="115" selection-start-line="111" selection-start-column="115" selection-end-line="111" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/bootstrap.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="821">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" selection-start-line="13" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/model/message.mod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="225" column="9" selection-start-line="225" selection-start-column="9" selection-end-line="225" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/source/user/create.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="141" column="19" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/function/safe.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/default/user/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3500">
+          <caret line="140" column="93" selection-start-line="140" selection-start-column="80" selection-end-line="140" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/source/user/logout.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/function/pdo.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/model/cache.mod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1352">
+          <caret line="240" column="9" selection-start-line="240" selection-start-column="9" selection-end-line="240" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/function/global.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15950">
+          <caret line="638" column="9" selection-start-line="638" selection-start-column="9" selection-end-line="638" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/index.html" />
+    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/const.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5350">
+          <caret line="214" column="33" selection-start-line="214" selection-start-column="8" selection-end-line="214" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/source/user/login.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3225">
+          <caret line="129" column="72" selection-start-line="129" selection-start-column="72" selection-end-line="129" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/class/oauth2/oauth2client.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/class/oauth2/system.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1450">
+          <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/model/user.mod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9000">
+          <caret line="360" column="9" selection-start-line="360" selection-start-column="9" selection-end-line="360" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/model/user.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/weixuexiao/inc/admin/controller/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>

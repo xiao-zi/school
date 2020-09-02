@@ -17,7 +17,7 @@
 	</div>
 	<div class="login-panel">
 		<div class="title">
-			<a href="javascript:void(0);">账号/手机登录11111</a>
+			<a href="javascript:void(0);">账号/手机登录</a>
 		</div>
 		<form action="" method="post" role="form" id="form1" onsubmit="return formcheck();" class="we7-form">
 
@@ -91,15 +91,12 @@
 	document.getElementById('password').onkeypress = detectCapsLock;
 
 	function formcheck() {
-        alert(1111);return;
-
 		if($('#remember:checked').length == 1) {
 			cookie.set('remember-username', $(':text[name="username"]').val());
 		} else {
 			cookie.del('remember-username');
 		}
 		return true;
-
 	}
 	var h = document.documentElement.clientHeight;
 	if($('.footer').length) {
